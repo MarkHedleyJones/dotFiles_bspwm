@@ -9,6 +9,11 @@ let g:atp_Python = "/usr/bin/python2"
 highlight ColorColumn ctermbg=cyan
 set colorcolumn=81
 
+"====[ Allow VIM to use 256 colour scheme in gnome-terminal ]====
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
 
 "=====[ Highlight matches when jumping to next ]=============
 nnoremap <silent> n n:call HLNext(0.4)<cr>
