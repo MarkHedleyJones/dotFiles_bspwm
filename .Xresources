@@ -1,0 +1,58 @@
+! Hybrid Terminal Colours
+! See: w0ng@github
+
+! colours for hybrid.vim (copied from Tomorrow-Night)
+#define t_background #1d1f21
+#define t_current_line #282a2e
+#define t_selection #373b41
+#define t_foreground #c5c8c6
+#define t_comment #969896
+#define t_red #cc6666
+#define t_orange #de935f
+#define t_yellow #f0c674
+#define t_green #b5bd68
+#define t_aqua #8abeb7
+#define t_blue #81a2be
+#define t_purple #b294bb
+
+! terminal colours
+URxvt*background: t_background
+URxvt*foreground: t_comment
+! black
+URxvt*color0: t_current_line
+URxvt*color8: t_selection
+! red
+URxvt*color1: #A54242
+URxvt*color9: t_red
+! green
+URxvt*color2: #8C9440
+URxvt*color10: t_green
+! yellow
+URxvt*color3: t_orange
+URxvt*color11: t_yellow
+! blue
+URxvt*color4: #5F819D
+URxvt*color12: t_blue
+! magenta
+URxvt*color5: #85678F
+URxvt*color13: t_purple
+! cyan
+URxvt*color6: #5E8D87
+URxvt*color14: t_aqua
+! white
+URxvt*color7: t_comment
+URxvt*color15: t_foreground
+
+! (u)rxvt stuff
+URxvt*font:xft:Terminus:size=12
+URxvt*scrollBar:False
+URxvt.perl-ext-common:default,matcher
+URxvt.urlLauncher:/usr/bin/firefox
+URxvt.matcher.button:1
+
+!I added this to make the cursor blink
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: 0
+
+! Cursor
+Xcursor.theme: GT3-small
